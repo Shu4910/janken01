@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/20171223192619.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+
+    <title>じゃんけんゲーム(最終戦)
+    </title>
+</head>
+<body>
+    <div class="jan-center">
+        <div class="main-word-fadeout">
+    <p>最終戦スタート！！</p>
+    <p>最初はグーじゃんけん</p>
+    </div>
+
+
+    <script src="js/test.js"></script>
+
+    <button onclick="R_Click(0);"> グー</button>
+    <button onclick="R_Click(1);"> チョキ</button>
+    <button onclick="R_Click(2);"> パー</button>
+    <br />
+    <p><img id="jankenpon2" src="img/jan.png" width="100" height="100"></p>
+
+    </div>
+
+    <!-- JSフォルダ -->
+  <div class="text-center">
+    <p id="Rejan1">
+    </p>
+    <p id="Rejan2">
+    </p>
+
+    <div class="next">
+        <div id="displaybtn">
+        <p>クリア！！おめでとう〜</p>
+        <img src="img/banzai.png" alt="">
+    </div>
+    <script src="js/test2.js"></script>
+  </div>
+    <input type="button" value="勝ちましたか？" onclick="clickBtn1()" />
+    <script>
+    //初期表示は非表示
+    document.getElementById("displaybtn").style.display ="none";
+    
+    function clickBtn1(){
+      const p1 = document.getElementById("displaybtn");
+    
+      if(p1.style.display=="block"){
+        // noneで非表示
+        p1.style.display ="none";
+      }else{
+        // blockで表示
+        p1.style.display ="block";
+      }
+    }
+    </script>
+
+
+
+</div>
+
+    
+    
+
+
+
+
+</body>
+</html>

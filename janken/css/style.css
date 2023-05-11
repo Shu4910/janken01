@@ -1,0 +1,210 @@
+/* ここから下に記載していく */
+html {
+  font-size: 62.5%;
+  }
+  /* bodyのフォントサイズを1.6em（16px）に設定 */
+  body {
+  font-size: 1.6em;
+  font-family:"Open Sans",'ヒラギノ角ゴ ProN W3', Hiragino Kaku Gothic ProN, "メイリオ", Meiryo, sans-serif;
+}
+
+
+header{
+  text-align: center;
+  color: white;
+  background-color: #eb6100;
+}
+
+.jan-center{
+  text-align: center;
+}
+
+
+.btn {
+  color: #fff;
+  background-color: #eb6100;
+  padding: 1%;
+  border-radius: 1vh;
+  font-size: 24px;
+}
+.btn:hover {
+  color: #fff;
+  background: #FFCC33;
+}
+
+
+
+.container{
+    position: relative;
+    margin:0 auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 10%;
+}
+
+
+.container h1{
+    position: absolute;
+    color: black;
+    padding:0 auto;
+    text-align: center;
+    margin:0 auto;
+    top: 50%;
+        transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    font-size: 4rem;
+  }
+
+
+  .main-word{
+    animation-name:fadeUpAnime;
+    animation-duration:0.5s;
+    animation-fill-mode:forwards;
+    opacity:0;
+    }
+    
+    @keyframes fadeUpAnime{
+      from {
+        opacity: 0;
+      transform: translateY(100px);
+      }
+    
+      to {
+        opacity: 1;
+      transform: translateY(0);
+      }
+    } 
+
+
+  @media screen and (max-width: 640px) {/* 640px以下でスマホ画面時*/
+    .container h1{
+      font-size: 2.5rem;
+    }
+    }
+
+
+  .container img{
+    width: 25%;
+    height: auto;
+    text-align: center;   
+  } 
+
+
+  .janken-center1{
+    text-align: center;
+    padding-top: 10%;   
+  }
+
+  .janken-center1 img{
+    width:100px;
+    height:100px;
+  }
+
+
+  .janken-center2{
+    text-align: center;  
+  }
+
+  .janken-center2 img{
+    width:100px;
+    height:100px;
+  }
+
+  .button-center{
+    text-align: center;   
+  }
+
+  .start{
+      text-align: center;   
+      margin-top: 10%;  
+      margin-left: auto;
+      margin-right: auto;
+  }
+
+  @media screen and (max-width: 640px) {
+  .start{
+    text-align: center;   
+    margin-top: 10%;  
+    margin-left: auto;
+    margin-right: auto;
+}
+    }
+
+
+
+.image{
+    animation-name:fadeInAnime;
+    animation-duration:1s;
+    animation-fill-mode:forwards;
+    opacity:0;
+    }
+    
+    @keyframes fadeInAnime{
+      from {
+        opacity: 0;
+      }
+    
+      to {
+        opacity: 0.25;
+      }
+    } 
+
+
+
+
+    .main-word-fadeout{
+        animation-name: smooth-fadein-out;
+        animation-duration: 1.5s;
+        animation-timing-function: ease;
+        animation-delay: 0s;
+        animation-direction: alternate;
+      }
+ 
+      @keyframes smooth-fadein-out {
+        100% {opacity: 1;}
+        0% {opacity: 0;}
+      }
+
+      .text-center{
+        text-align: center;
+      }
+
+      .next{
+        padding-top: 5%;
+        padding-bottom: 5%;
+        text-align: center;
+        position: relative;
+      }
+
+      .next img{
+        width: 30%;
+        height: 30%;
+        margin: 0 auto;
+      }
+
+      .next p{
+        font-weight: bold;
+        font-size: 4rem;
+      }
+
+      @media screen and (max-width: 640px) {/* 640px以下でスマホ画面時*/
+        .next p{
+          font-weight: bold;
+          font-size: 2.5rem;
+        }
+        }
+
+
+
+    footer{
+      margin-top: 10%;
+      background-color:#707070;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      text-align: center;
+      color: white;
+      }
